@@ -50,7 +50,7 @@ function MailChimp(props) {
               name="email"
               id="mail"
               label="email-input"
-              placeholder="Email adres"
+              placeholder={languageToUse.email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>

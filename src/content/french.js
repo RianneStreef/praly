@@ -177,7 +177,7 @@ export const french = {
   bookingAppartPageTitle: "Réservez l'Appart",
   bookingPavillionPageTitle: "Réservez le Pavillon",
 
-  subscribeText: "Subscribe to our newletter",
+  subscribeText: "S'inscrire à notre newsletter",
   subscribeConfirmation: "Votre adresse email est bien enregistré!",
   subscribeButton: "S'abonner",
 

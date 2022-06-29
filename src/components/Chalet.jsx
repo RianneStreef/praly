@@ -2,13 +2,12 @@ import React from "react";
 
 import { Link } from "gatsby";
 
-// import { SRLWrapper } from "simple-react-lightbox";
-
 import "../styles/Chalet.css";
 
 import pictoChaletColor from "../images/chalet-couleur.png";
 
 import { content } from "../content/languages";
+import Lightbox from "../components/external-components/lightbox/Lightbox";
 
 import videoRoom1 from "../images/videos/chalet.mp4";
 
@@ -25,15 +24,6 @@ import bikeParking from "../images/icons/velo.png";
 import clim from "../images/icons/clim.png";
 import bebe from "../images/icons/lit-bébé.png";
 
-const options = {
-  settings: {
-    overlayColor: "#fff",
-  },
-  thumbnails: {
-    thumbnailsAlignment: "center",
-  },
-};
-
 const Chalet = (props) => {
   let { language, languageToUse } = props;
 
@@ -45,23 +35,17 @@ const Chalet = (props) => {
 
   let images = data.allContentfulPraly.nodes;
 
-  const imagesList = images
+  const lightboxImages = images
     .filter((image) => image.category === "chalet")
     .map((image) => {
-      return (
-        <a
-          key={image.id}
-          href={image.fullImage.file.url}
-          className="room-description-image-container"
-        >
-          <img
-            src={image.thumbnail.file.url}
-            alt=""
-            className="room-description-image"
-          />
-        </a>
-      );
+      return {
+        id: image.index,
+        src: image.fullImage.file.url,
+        thumbnail: image.thumbnail.file.url,
+        alt: "",
+      };
     });
+
   return (
     <>
       <div className="chalet" id="chalet">
@@ -82,7 +66,7 @@ const Chalet = (props) => {
             <h3 className="h3-room h3-chalet">Le Chalet</h3>
           </div>
         </div>
-        <div className="video-container">
+        <div className="video-container-horizontal">
           <Link
             to="/chalet-booking"
             className="book-now book-now-chalet desktop-only"
@@ -93,7 +77,7 @@ const Chalet = (props) => {
             controls
             autoPlay
             muted
-            className="room-video room-video-chalet"
+            className="room-video-horizontal room-video-chalet"
           >
             <source src={videoRoom1} type="video/mp4" />
           </video>
@@ -104,9 +88,7 @@ const Chalet = (props) => {
           <p className="room-text">{languageToUse.chaletP3}</p>
         </div>
         <div className="room-description room-description-chalet">
-          {/* <SRLWrapper options={options}> */}
-          <div className="room-description-images">{imagesList}</div>
-          {/* </SRLWrapper> */}
+          <Lightbox lightboxImages={lightboxImages} />
           <div className="room-description-list">
             <h3 className="installations-title">
               {languageToUse.installations}

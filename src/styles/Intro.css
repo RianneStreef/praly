@@ -113,7 +113,6 @@
 .privatisation {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10vw;
 }
 
 .privatisation-icon {
@@ -130,6 +129,7 @@
 
 .privatisation-text ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .family-icon {
@@ -158,6 +158,7 @@
   .privatisation {
     margin: 0 0 10vw 5vw;
     flex-direction: row;
+    margin-bottom: 10vw;
   }
 
   .privatisation-text {

@@ -7,6 +7,7 @@ import "../styles/Pavillion.css";
 import pictoPavillionColor from "../images/pavillon-couleur.png";
 
 import { content } from "../content/languages";
+import Lightbox from "../components/external-components/lightbox/Lightbox";
 
 import videoRoom1 from "../images/room1.mp4";
 
@@ -34,22 +35,15 @@ const Pavillion = (props) => {
 
   let images = data.allContentfulPraly.nodes;
 
-  const imagesList = images
-    .filter((image) => image.category === "chalet")
+  const lightboxImages = images
+    .filter((image) => image.category === "pavillion")
     .map((image) => {
-      return (
-        <a
-          key={image.id}
-          href={image.fullImage.file.url}
-          className="room-description-image-container"
-        >
-          <img
-            src={image.thumbnail.file.url}
-            alt=""
-            className="room-description-image"
-          />
-        </a>
-      );
+      return {
+        id: image.index,
+        src: image.fullImage.file.url,
+        thumbnail: image.thumbnail.file.url,
+        alt: "",
+      };
     });
 
   return (
@@ -87,7 +81,7 @@ const Pavillion = (props) => {
         </div>
         <div className="room-description room-description-chalet">
           <div className="room-description-images">
-            <div className="room-description-images">{imagesList}</div>
+            <Lightbox lightboxImages={lightboxImages} />
           </div>
           <div className="room-description-list">
             <h3 className="installations-title">

@@ -27,7 +27,7 @@ const RoomIntro = (props) => {
         <h2>{languageToUse.ourRooms1}</h2>
         <h2>{languageToUse.ourRooms2}</h2>
 
-        <div className="image-links hidden-mobile-room-intro">
+        <div className="image-links">
           <Link to="/#chalet-intro" className="image-link chalet-image-link">
             <p className="image-link-title">Le Chalet</p>
             <div to="/#chalet-intro" className="extra-info-button">

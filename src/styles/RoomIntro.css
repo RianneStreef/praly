@@ -6,8 +6,7 @@
 .image-links {
   display: flex;
   justify-content: space-around;
-  margin: 100px 0;
-  padding: 35px;
+  padding: 15px;
 }
 
 .image-link {
@@ -54,7 +53,7 @@
 
 .image-link-title {
   font-family: "Hello mozza";
-  font-size: 60px;
+  font-size: 25px;
   color: #fff;
   margin: 100px 0 20px 0;
   filter: brightness(1);
@@ -121,7 +120,6 @@
 .room-image {
   width: 90vw;
   z-index: 50;
-  margin: 30px 0;
 }
 
 .book-now {
@@ -296,6 +294,21 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .image-links {
+    padding: 35px;
+    margin: 100px 0;
+  }
+
+  .image-link {
+    height: 40vw;
+    width: 27vw;
+  }
+
+  .image-link-title {
+    font-size: 60px;
+    margin: 100px 0 20px 0;
+  }
+
   .hidden-mobile-room-intro {
     display: flex;
   }

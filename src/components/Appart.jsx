@@ -2,8 +2,6 @@ import React from "react";
 
 import { Link } from "gatsby";
 
-// import { SRLWrapper } from "simple-react-lightbox";
-
 import "../styles/Appart.css";
 
 import pictoAppartColor from "../images/appart-couleur.png";
@@ -49,66 +47,48 @@ const Appart = (props) => {
 
   let images = data.allContentfulPraly.nodes;
 
-  // const imagesList = images
-  // .filter((image) => image.category === "appart")
-  // .map((image) => {
-  //   return (
-  //     <a
-  //       key={image.id}
-  //       href={image.fullImage.file.url}
-  //       className="room-description-image-container"
-  //     >
-  //       <img
-  //         src={image.thumbnail.file.url}
-  //         alt=""
-  //         className="room-description-image"
-  //       />
-  //     </a>
-  //   );
-  // });
-
   const imagesListFrench = (
     <>
       <div className="room-description-image-container">
         <img
           src={comingSoonFR}
           alt="Bientôt disponible"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
       <div className="room-description-image-container">
         <img
           src={comingSoonFR}
           alt="Bientôt disponible"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
       <div className="room-description-image-container">
         <img
           src={comingSoonFR}
           alt="Bientôt disponible"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
       <div className="room-description-image-container">
         <img
           src={comingSoonFR}
           alt="Bientôt disponible"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
       <div className="room-description-image-container">
         <img
           src={comingSoonFR}
           alt="Bientôt disponible"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
       <div className="room-description-image-container">
         <img
           src={comingSoonFR}
           alt="Bientôt disponible"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
     </>
@@ -120,42 +100,42 @@ const Appart = (props) => {
         <img
           src={comingSoonEN}
           alt="Coming soon"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
       <div className="room-description-image-container">
         <img
           src={comingSoonEN}
           alt="Coming soon"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
       <div className="room-description-image-container">
         <img
           src={comingSoonEN}
           alt="Coming soon"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
       <div className="room-description-image-container">
         <img
           src={comingSoonEN}
           alt="Coming soon"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
       <div className="room-description-image-container">
         <img
           src={comingSoonEN}
           alt="Coming soon"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
       <div className="room-description-image-container">
         <img
           src={comingSoonEN}
           alt="Coming soon"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
     </>
@@ -167,42 +147,42 @@ const Appart = (props) => {
         <img
           src={comingSoonNL}
           alt="Binnenkort beschikbaar"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
       <div className="room-description-image-container">
         <img
           src={comingSoonNL}
           alt="Binnenkort beschikbaar"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
       <div className="room-description-image-container">
         <img
           src={comingSoonNL}
           alt="Binnenkort beschikbaar"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
       <div className="room-description-image-container">
         <img
           src={comingSoonNL}
           alt="Binnenkort beschikbaar"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
       <div className="room-description-image-container">
         <img
           src={comingSoonNL}
           alt="Binnenkort beschikbaar"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
       <div className="room-description-image-container">
         <img
           src={comingSoonNL}
           alt="Binnenkort beschikbaar"
-          className="room-description-image coming-soon-image"
+          className="thumbnail-image coming-soon-image"
         />
       </div>
     </>
