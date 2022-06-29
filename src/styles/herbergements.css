@@ -12,7 +12,7 @@
 }
 
 .room-video {
-  width: 100%;
+  width: 40%;
   margin-top: 30px;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .room-description-image {
-  width: 40vw;
+  width: 100%;
   margin: 3px 5px;
 }
 
@@ -148,9 +148,6 @@
     padding: 0 10px 5px 0;
   }
 
-  .room-description-image {
-    width: 100%;
-  }
   .book-now-herbergement {
     font-size: 3rem;
   }

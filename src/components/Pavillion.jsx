@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Link } from "gatsby";
-// import { SRLWrapper } from "simple-react-lightbox";
 
 import "../styles/Pavillion.css";
 
@@ -24,15 +23,6 @@ import bikeParking from "../images/icons/velo.png";
 import clim from "../images/icons/clim.png";
 import bebe from "../images/icons/lit-bébé.png";
 
-const options = {
-  settings: {
-    overlayColor: "rgb(255, 255, 255, 0.9)",
-  },
-  thumbnails: {
-    thumbnailsAlignment: "center",
-  },
-};
-
 const Pavillion = (props) => {
   let { language, languageToUse } = props;
 
@@ -45,7 +35,7 @@ const Pavillion = (props) => {
   let images = data.allContentfulPraly.nodes;
 
   const imagesList = images
-    .filter((image) => image.category === "pavillion")
+    .filter((image) => image.category === "chalet")
     .map((image) => {
       return (
         <a
@@ -96,9 +86,9 @@ const Pavillion = (props) => {
           <p className="room-text">{languageToUse.pavillionP2}</p>
         </div>
         <div className="room-description room-description-chalet">
-          {/* <SRLWrapper options={options}> */}
-          <div className="room-description-images">{imagesList}</div>
-          {/* </SRLWrapper> */}
+          <div className="room-description-images">
+            <div className="room-description-images">{imagesList}</div>
+          </div>
           <div className="room-description-list">
             <h3 className="installations-title">
               {languageToUse.installations}
