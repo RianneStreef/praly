@@ -102,9 +102,7 @@
   .thumbnail-image {
     width: 29vw;
   }
-  .lightbox {
-    justify-content: flex-end;
-  }
+
   .lightbox-image {
     width: 70vw;
   }
@@ -113,5 +111,8 @@
 @media only screen and (min-width: 1000px) {
   .thumbnail-image {
     width: 20vw;
+  }
+  .lightbox {
+    justify-content: flex-end;
   }
 }
