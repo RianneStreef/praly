@@ -92,12 +92,16 @@
   padding: 20px;
 }
 
-.copyright p {
+.copyright span {
   font-size: 10px;
 }
 
 .copyright a {
   text-decoration: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright a:visited {
