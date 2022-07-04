@@ -56,31 +56,33 @@ const Chalet = (props) => {
         >
           {languageToUse.bookNow}
         </Link>
-        <div className="picto-outer-container">
-          <div className="picto-container-herbergement picto-container-herbergement-chalet ">
-            <img
-              src={pictoChaletColor}
-              alt="Le Chalet"
-              className="picto-herbergement "
-            />
-            <h3 className="h3-room h3-chalet">Le Chalet</h3>
+        <div className="lodge-header-container">
+          <div className="picto-outer-container">
+            <div className="picto-container-herbergement picto-container-herbergement-chalet ">
+              <img
+                src={pictoChaletColor}
+                alt="Le Chalet"
+                className="picto-herbergement "
+              />
+              <h3 className="h3-room h3-chalet">Le Chalet</h3>
+            </div>
           </div>
-        </div>
-        <div className="video-container-horizontal">
-          <Link
-            to="/chalet-booking"
-            className="book-now book-now-chalet desktop-only"
-          >
-            {languageToUse.bookNow}
-          </Link>
-          <video
-            controls
-            autoPlay
-            muted
-            className="room-video-horizontal room-video-chalet"
-          >
-            <source src={videoRoom1} type="video/mp4" />
-          </video>
+          <div className="video-container-horizontal">
+            <Link
+              to="/chalet-booking"
+              className="book-now book-now-chalet desktop-only"
+            >
+              {languageToUse.bookNow}
+            </Link>
+            <video
+              controls
+              autoPlay
+              muted
+              className="room-video-horizontal room-video-chalet"
+            >
+              <source src={videoRoom1} type="video/mp4" />
+            </video>
+          </div>
         </div>
         <div className="room-description-text">
           <p className="room-text">{languageToUse.chaletP1}</p>

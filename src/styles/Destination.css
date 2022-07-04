@@ -14,6 +14,10 @@
   margin: 0 auto;
 }
 
+.destination-text {
+  margin: 5px;
+}
+
 .destination-text-1 {
   padding: 5vw;
   margin: 0;

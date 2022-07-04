@@ -11,6 +11,12 @@
   align-items: center;
 }
 
+.lodge-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .room-video {
   width: 100%;
   /* margin-top: 30px; */
@@ -149,9 +155,21 @@
   }
 }
 
+@media (min-width: 500px) {
+  .room-video-horizontal {
+    width: 45vw;
+  }
+}
+
 @media (min-width: 768px) {
   .hero-herbergement {
     background-image: url("../images/Hero-image-hebergement-v3.jpg");
+  }
+
+  .lodge-header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .room-description-pavillion {
@@ -188,7 +206,6 @@
     margin-top: 30px;
   }
   .video-container-horizontal {
-    margin-top: -180px;
     align-items: flex-end;
   }
 

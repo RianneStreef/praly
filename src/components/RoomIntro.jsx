@@ -6,9 +6,9 @@ import "../styles/RoomIntro.css";
 
 import { content } from "../content/languages";
 
-import chalet from "../images/chalet-main.jpg";
+import chalet from "../images/new-images/chalet-ext2.jpg";
 import appart from "../images/appart-main.jpg";
-import pavillion from "../images/pavillion-main.jpg";
+import pavillion from "../images/new-images/pavillon-façade.jpg";
 
 import pictoChaletColor from "../images/chalet-couleur.png";
 import pictoPavillionColor from "../images/pavillon-couleur.png";
@@ -44,7 +44,7 @@ const RoomIntro = (props) => {
             to="/#pavillion-intro"
             className="image-link pavillion-image-link"
           >
-            <p className="image-link-title">Le Pavillion</p>
+            <p className="image-link-title">Le Pavillon</p>
             <div to="/#pavillion-intro" className="extra-info-button">
               {languageToUse.moreInfo}
             </div>

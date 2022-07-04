@@ -53,6 +53,7 @@ const BookingPage = function (props) {
         <div className="header-placeholder" />
 
         <h2 className="page-subtitle">{languageToUse.bookingPageSubTitle}</h2>
+        <p className="additional-info-resas">{languageToUse.additionalInfo}</p>
       </div>
       <iframe
         className="iframe-booking iframe-booking-all"

@@ -20,6 +20,7 @@
 
 .thumbnail-image {
   width: 35vw;
+  height: 35vw;
   margin: 10px;
 }
 
@@ -86,6 +87,7 @@
 @media only screen and (min-width: 600px) {
   .thumbnail-image {
     width: 40vw;
+    height: 40vw;
   }
   .thumbnail-list-mobile {
     display: none;
@@ -101,6 +103,7 @@
 @media only screen and (min-width: 768px) {
   .thumbnail-image {
     width: 29vw;
+    height: 29vw;
   }
 
   .lightbox-image {
@@ -111,6 +114,7 @@
 @media only screen and (min-width: 1000px) {
   .thumbnail-image {
     width: 20vw;
+    height: 20vw;
   }
   .lightbox {
     justify-content: flex-end;

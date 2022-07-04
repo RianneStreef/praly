@@ -162,6 +162,11 @@ export const english = {
   hebergementsPageTitle: "The 3 Lodges",
 
   bookingPageTitle: "Book your stay",
+  bookingPageSubTitle: "Check availability",
+
+  additionalInfo:
+    "For reservations for more than 4 people, please contact us directly.",
+
   bookingChaletPageTitle: "Book le Chalet",
   bookingAppartPageTitle: "Book l'Appart",
   bookingPavillionPageTitle: "Book le Pavillon",

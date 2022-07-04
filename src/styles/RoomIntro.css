@@ -42,7 +42,7 @@
 }
 
 .chalet-image-link::before {
-  background-image: url("../images/chalet-v.jpeg");
+  background-image: url("../images/facade-portrait-chalet.jpg");
 }
 .appart-image-link::before {
   background-image: url("../images/appart-v.jpeg");
@@ -296,7 +296,6 @@
 @media only screen and (min-width: 768px) {
   .image-links {
     padding: 35px;
-    margin: 100px 0;
   }
 
   .image-link {

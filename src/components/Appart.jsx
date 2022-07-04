@@ -8,8 +8,6 @@ import pictoAppartColor from "../images/appart-couleur.png";
 
 import { content } from "../content/languages";
 
-import videoRoom1 from "../images/room1.mp4";
-
 import comingSoonFR from "../images/DISPO-BIENTOT.jpg";
 import comingSoonEN from "../images/Available-soon.jpg";
 import comingSoonNL from "../images/Binnenkort-beschikbaar.jpg";
@@ -26,15 +24,6 @@ import parking from "../images/icons/parking.png";
 import bikeParking from "../images/icons/velo.png";
 import clim from "../images/icons/clim.png";
 import bebe from "../images/icons/lit-bébé.png";
-
-const options = {
-  settings: {
-    overlayColor: "rgb(255, 255, 255, 0.9)",
-  },
-  thumbnails: {
-    thumbnailsAlignment: "center",
-  },
-};
 
 const Appart = (props) => {
   let { language, languageToUse } = props;
@@ -206,16 +195,13 @@ const Appart = (props) => {
           />
           <h3 className="h3-room h3-appart">L'Appart</h3>
         </div>
-        <div className="video-container">
+        <div className="video-container-appart">
           <Link
             to="/appart-booking"
             className="book-now book-now-appart desktop-only"
           >
             {languageToUse.bookNow}
           </Link>
-          <video controls autoPlay className="room-video">
-            <source src={videoRoom1} type="video/mp4" />
-          </video>
         </div>
         <div className="room-description-text">
           <p className="room-text">{languageToUse.appartP1}</p>
@@ -223,8 +209,6 @@ const Appart = (props) => {
           <p className="room-text">{languageToUse.appartP3}</p>
         </div>
         <div className="room-description room-description-appart">
-          {/* <SRLWrapper options={options}> */}
-          {/* <div className="room-description-images">{imagesList}</div> */}
           {language === "french" ? (
             <div className="room-description-images">{imagesListFrench}</div>
           ) : language === "english" ? (
@@ -232,7 +216,6 @@ const Appart = (props) => {
           ) : (
             <div className="room-description-images">{imagesListDutch}</div>
           )}
-          {/* </SRLWrapper> */}
           <div className="room-description-list">
             <h3 className="installations-title">
               {languageToUse.installations}

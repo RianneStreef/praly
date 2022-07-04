@@ -9,7 +9,7 @@ import pictoPavillionColor from "../images/pavillon-couleur.png";
 import { content } from "../content/languages";
 import Lightbox from "../components/external-components/lightbox/Lightbox";
 
-import videoRoom1 from "../images/room1.mp4";
+import videoRoom1 from "../images/videos/pavillion.mp4";
 
 import pavillion from "../images/picto-pavillion.png";
 import vueVillage from "../images/icons/vue-village.png";
@@ -56,24 +56,33 @@ const Pavillion = (props) => {
         >
           {languageToUse.bookNow}
         </Link>
-        <div className="picto-container-herbergement picto-container-herbergement-pavillion ">
-          <img
-            src={pictoPavillionColor}
-            alt="Le Pavillon"
-            className="picto-herbergement "
-          />
-          <h3 className="h3-room h3-pavillion">Le Pavillon</h3>
-        </div>
-        <div className="video-container">
-          <Link
-            to="/pavillion-booking"
-            className="book-now book-now-pavillion desktop-only"
-          >
-            {languageToUse.bookNow}
-          </Link>
-          <video controls autoPlay className="room-video">
-            <source src={videoRoom1} type="video/mp4" />
-          </video>
+        <div className="lodge-header-container">
+          <div className="picto-outer-container">
+            <div className="picto-container-herbergement picto-container-herbergement-pavillion ">
+              <img
+                src={pictoPavillionColor}
+                alt="Le Pavillon"
+                className="picto-herbergement "
+              />
+              <h3 className="h3-room h3-pavillion">Le Pavillon</h3>
+            </div>
+          </div>
+          <div className="video-container-horizontal">
+            <Link
+              to="/pavillion-booking"
+              className="book-now book-now-pavillion desktop-only"
+            >
+              {languageToUse.bookNow}
+            </Link>
+            <video
+              controls
+              autoPlay
+              muted
+              className="room-video-horizontal room-video-chalet"
+            >
+              <source src={videoRoom1} type="video/mp4" />
+            </video>
+          </div>
         </div>
         <div className="room-description-text">
           <p className="room-text">{languageToUse.pavillionP1}</p>

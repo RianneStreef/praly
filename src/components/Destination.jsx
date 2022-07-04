@@ -52,7 +52,7 @@ const Destination = (props) => {
               >
                 <img src={logoLink1} className="logo-link-destination" />
               </a>
-              <a href="https://www.eyrieuxsport.fr/page.html/" target="blank">
+              <a href="https://www.eyrieuxsport.fr/" target="blank">
                 <img src={logoLink2} className="logo-link-destination" />
               </a>
               <a href="https://aquarock.fr/fr/parc-aventure/" target="blank">

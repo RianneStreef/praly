@@ -146,6 +146,11 @@ export const dutch = {
   hebergementsPageTitle: "De 3 Lodges",
 
   bookingPageTitle: "Boek uw verblijf",
+  bookingPageSubTitle: "Bekijk beschikbaarheid",
+
+  additionalInfo:
+    "For reservations for more than 4 people, please contact us directly.",
+
   bookingChaletPageTitle: "Boek le Chalet",
   bookingAppartPageTitle: "Boek l'Appart",
   bookingPavillionPageTitle: "Boek le Pavillon",
