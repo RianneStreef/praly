@@ -468,3 +468,13 @@
     font-size: 5rem;
   }
 }
+
+@media only screen and (min-width: 1700px) {
+  .room-intro-text-block {
+    width: 425px;
+  }
+
+  .room-intro-text-block-inverse {
+    width: 425px;
+  }
+}
